@@ -1,10 +1,18 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Run Codeship'
+description: 'Run codeship'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  user:
+    description: 'Codeship User'
     required: true
-    default: '1000'
+  password: 
+    description: 'Codeship Password'
+    required: true
+  organization-id:
+    description: 'Organization ID'
+    required: true
+  project-id:
+    description: 'Project ID'
+    required: true
 outputs:
   time: # output will be available to future steps
     description: 'The message to output'
